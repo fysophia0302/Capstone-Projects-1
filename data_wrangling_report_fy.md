@@ -36,7 +36,7 @@ _clean_data.duplicated()_
 _clean_data=cleaned_df.drop_duplicates(['id'])_
 
 **7. Drop the fake data**  
-By observing the scatter chart, I set a gross range for data set, for example, the 'price' should be from  0 to 20000, and the 'odometer' should be 0 to 40000.
+Based on common sense, I found that some of the data are not real. For example, maximum of price in the data set is  3600028900, which is obviously a fake data. By observing the scatter chart, I set a gross range for data set, for example, the 'price' should be from  0 to 20000, and the 'odometer' should be 0 to 40000.
 
 _df1=df[df['price']<200000]_
 clean_data=df1[df1['odometer']<400000]
